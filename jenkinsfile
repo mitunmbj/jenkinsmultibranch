@@ -7,9 +7,8 @@ pipeline {
                     branch "main"
                 }
             }
-            agent { label 'docker_linux' }
             steps {
-                sh "echo 'Hi Mitun, this is Master'"
+                echo 'Hi Mitun, this is Master'
             }
         }
         stage('Example2') {
@@ -18,9 +17,8 @@ pipeline {
                     branch "QA"
                 }
             }
-            agent { label 'docker_linux' }
             steps {
-                sh "echo 'Hi Mitun, this is QA'"
+                echo 'Hi Mitun, this is QA'
             }
         }
         stage('Example2') {
@@ -29,9 +27,8 @@ pipeline {
                     branch "development"
                 }
             }
-            agent { label 'docker_linux' }
             steps {
-                sh "echo 'Hi Mitun, this is development'"
+                 echo 'Hi Mitun, this is development'
             }
         }
     }
