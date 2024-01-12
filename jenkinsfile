@@ -8,7 +8,7 @@ pipeline {
                 }
             }      
             steps {
-                echo 'Hi Mitun, this is Master'
+                sh "echo 'Hi Mitun, this is Master'"
             }
         }
         stage('Example2') {
@@ -18,7 +18,7 @@ pipeline {
                 }
             }      
             steps {
-                echo 'Hi Mitun, this is QA'
+                sh "echo 'Hi Mitun, this is QA'"
             }
         }
         stage('Example2') {
@@ -28,7 +28,7 @@ pipeline {
                 }
             }      
             steps {
-                echo 'Hi Mitun, this is development'
+                sh "echo 'Hi Mitun, this is development'"
             }
         }
     }
