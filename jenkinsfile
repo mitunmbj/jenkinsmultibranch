@@ -6,7 +6,8 @@ pipeline {
                 anyOf {
                     branch "main"
                 }
-            }      
+            }
+            agent { label 'docker_linux' }
             steps {
                 sh "echo 'Hi Mitun, this is Master'"
             }
@@ -16,7 +17,8 @@ pipeline {
                 anyOf {
                     branch "QA"
                 }
-            }      
+            }
+            agent { label 'docker_linux' }
             steps {
                 sh "echo 'Hi Mitun, this is QA'"
             }
@@ -26,7 +28,8 @@ pipeline {
                 anyOf {
                     branch "development"
                 }
-            }      
+            }
+            agent { label 'docker_linux' }
             steps {
                 sh "echo 'Hi Mitun, this is development'"
             }
