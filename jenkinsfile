@@ -4,11 +4,11 @@ pipeline {
         stage('Example') {
             when {
                 anyOf {
-                    branch "main"
+                    branch "production"
                 }
             }
             steps {
-                echo 'Hi Mitun, this is Master'
+                echo 'Hi Mitun, this is Production'
             }
         }
         stage('Example2') {
