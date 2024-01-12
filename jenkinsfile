@@ -21,7 +21,7 @@ pipeline {
                 echo 'Hi Mitun, this is QA'
             }
         }
-        stage('Example2') {
+        stage('Example3') {
             when {
                 anyOf {
                     branch "development"
