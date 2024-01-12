@@ -15,6 +15,7 @@ pipeline {
             when {
                 anyOf {
                     branch "QA"
+                    branch "development"
                 }
             }
             steps {
